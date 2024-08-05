@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<style>
+   .help {
+      border: solid 2px #0004ff;
+   }
+</style>
+
+<head>
+   <!-- As metatags -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="widht:device-width, initial-scale=1.0" />
+   <title>Página Básica</title>
+</head>
+
+<body>
+   <div class="container">
+      <header class="cabecalho">
+         <h1 style="text-align: center;border: solid 2px #ff0000;">Minha Pagina</h1>
+
+         <nav class="menu">
+
+            <!-- ul = unordered list e só pode conter dentro diretamente dentro de si li(list item) ou outros uls-->
+            <ul>
+               <li><a href="./paginas/help.html"> Help </a></li>
+               <li><a href="./paginas/contact.html"> Contact </a></li>
+               <li><a href="#contact"> About </a></li>
+            </ul>
+         </nav>
+
+      </header>
+
+      <section class="conteudo">
+         <div>
+            <h2 class="help">HELP</h2>
+            <p>Help - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum eos enim molestiae sint hic
+               ea non, dicta dolores, suscipit provident! Hic harum, quos ratione at id commodi recusandae odit sed
+               beatae alias cum tempore, neque delectus, ducimus ipsa deserunt excepturi omnis tenetur vitae. Culpa,
+               deserunt? Porro, doloremque cum? Adipisci magnam quas libero, consectetur cumque eveniet architecto saepe
+               sint. Provident perspiciatis nostrum explicabo aut quos inventore dolor sint consequatur a facere quia
+               voluptas impedit ipsum tenetur, hic enim, qui illo iste? Laborum repellat ad, error ullam aut fuga,
+               tempora culpa eos qui officiis earum dolores! A eveniet nisi nostrum et.</p>
+            <a href="./paginas/help.html">Mais...</a>
+         </div>
+         <div>
+            <h2>About</h2>
+            <p>About - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat delectus repellat soluta vel
+               nemo quidem sint rem temporibus quos?</p>
+            <a href="./paginas/about.html">Mais...</a>
+         </div>
+         <div id="contact">
+            <h2>CONTACT</h2>
+            <form>
+               <fieldset>
+                  <legend>Customer Data</legend>
+                  <div>
+                     <label for="idNm">Nome:</label>
+                     <input type="text" name="txtNm" id="idNm" placeholder="Digite seu nome." />
+                  </div>
+                  <div>
+                     <label for="idEmail">Email:</label>
+                     <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu email." />
+                  </div>
+                  <div>
+                     <button type="button">Send</button>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </section>
+
+      <footer class="rodape">
+         <nav class="menu">
+            <ul>
+               <li><a href="https://www.fiap.com.br" target="_blank">FIAP</a></li>
+               <li><a href="#">GOOGLE</a></li>
+               <li><a href="#">Github</a></li>
+            </ul>
+         </nav>
+      </footer>
+
+   </div>
+</body>
+
+</html>
