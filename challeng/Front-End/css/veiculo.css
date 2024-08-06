@@ -1,0 +1,694 @@
+main{
+    display: grid;
+    height: 2220px;
+    padding: 30px;
+    gap: 60px;
+    grid-template-rows: 1fr auto auto 1fr 1fr auto;
+    grid-template-areas: 
+        'texto'
+        'titulo'
+        'hr'
+        'carro1'
+        'carro2'
+        'mais';
+
+    & .texto{
+        grid-area: texto;
+        align-self: center;
+        justify-self: center;
+        width: 60vw;
+        
+        & p{
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+
+    & .titulo{
+        grid-area: titulo;
+        justify-self: center;
+
+        & h1{
+            font-family: 'Inknut Antiqua';
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+
+    & hr{
+        grid-area: hr;
+        justify-self: center;
+        width: 80vw;
+        border-color: #C90A02;
+    }
+
+    & #honda{
+        grid-area: carro1;
+        display: flex;
+
+        & #honda-img{
+            display: inline-block;
+            background-color: #752E2B;
+            padding: 15px;
+
+            & .fundo-img{
+                background-color: #171F25;
+                border-radius: 10px;
+
+                & img{
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+            
+
+            
+        }
+
+        & #honda-txt{
+            display: block;
+            align-self: center;
+            height: 100px;
+            background-color: #171F25;
+            padding: 40px;
+            align-self: center;
+
+            & h3{
+                font-size: 30px;
+                font-family: 'Inknut Antiqua';
+                padding: 5px;
+                color: #fff;
+            }
+
+            & p{
+                font-size: 16px;
+                text-align: center;
+                padding: 5px;
+                color: #fff;
+            }
+        }
+    }
+
+    & #fiat{
+        grid-area: carro2;
+        justify-self: right;
+        display: flex;
+
+        & #fiat-img{
+            display: inline-block;
+            background-color: #752E2B;
+            padding: 15px;
+
+            & .fundo-img{
+                background-color: #171F25;
+                border-radius: 10px;
+
+                & img{
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+            
+
+            
+        }
+
+        & #fiat-txt{
+            display: block;
+            align-self: center;
+            height: 100px;
+            background-color: #171F25;
+            padding: 40px;
+            align-self: center;
+
+            & h3{
+                font-size: 30px;
+                font-family: 'Inknut Antiqua';
+                padding: 5px;
+                color: #fff;
+            }
+
+            & p{
+                font-size: 16px;
+                text-align: center;
+                padding: 5px;
+                color: #fff;
+            }
+        }
+    }
+
+    & .relatorio{
+        text-decoration: underline;
+    }
+
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:834px) {
+
+    .cabecalho{
+        width: 78vw;
+        height: 100px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 10vw 10vw 35vw 10vw;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    
+        & .menus{
+    
+            & img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    
+        & .img-logo{
+
+            & img{
+                width: 63px;
+                height: 58px;
+            }
+        }
+    
+        & h4{
+            display: none;
+    
+        }
+    
+        & .pagina{
+            justify-self: center;
+            & h2{
+                font-size: 50px;
+            }
+        
+        }
+        
+        & .usuario{
+            & img{
+                width: 90px;
+                height: 45px;
+            }
+           
+        }
+    }
+    main{
+        width: 78vw;
+        height: 1006px;
+        grid-template-rows: 1fr auto auto 1fr 1fr auto;
+    
+        & .texto{
+            width: 60vw;
+            
+            & p{
+                font-size: 24px;
+            }
+        }
+    
+        & .titulo{
+    
+            & h1{
+                font-size: 51px;
+            }
+        }
+    
+        & hr{
+            width: 50vw;
+        }
+    
+        & #honda{
+    
+            & #honda-img{
+                & .fundo-img{
+    
+                    & img{
+                        width: 223px;
+                        height: 207px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #honda-txt{
+                height: 200px;
+    
+                & h3{
+                    font-size: 24px;
+                }
+    
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        & #fiat{
+    
+            & #fiat-img{
+                & .fundo-img{
+    
+                    & img{
+                        width: 239px;
+                        height: 207px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #fiat-txt{
+                height: 100px;
+    
+                & h3{
+                    font-size: 24px;
+                }
+    
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        width: 78vw;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) {
+    
+    .cabecalho{
+        width: 78vw;
+        height: 100px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 10vw 10vw 35vw 10vw;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    
+        & .menus{
+    
+            & img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    
+        & .img-logo{
+
+            & img{
+                width: 63px;
+                height: 58px;
+            }
+        }
+    
+        & h4{
+            display: none;
+    
+        }
+    
+        & .pagina{
+            justify-self: center;
+            & h2{
+                font-size: 50px;
+            }
+        
+        }
+        
+        & .usuario{
+            & img{
+                width: 90px;
+                height: 45px;
+            }
+           
+        }
+    }
+    main{
+        width: 78vw;
+        height: 1006px;
+        grid-template-rows: 1fr auto auto 1fr 1fr auto;
+    
+        & .texto{
+            width: 60vw;
+            
+            & p{
+                font-size: 24px;
+            }
+        }
+    
+        & .titulo{
+    
+            & h1{
+                font-size: 51px;
+            }
+        }
+    
+        & hr{
+            width: 50vw;
+        }
+    
+        & #honda{
+    
+            & #honda-img{
+                & .fundo-img{
+    
+                    & img{
+                        width: 223px;
+                        height: 207px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #honda-txt{
+                height: 200px;
+    
+                & h3{
+                    font-size: 24px;
+                }
+    
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        & #fiat{
+    
+            & #fiat-img{
+                & .fundo-img{
+    
+                    & img{
+                        width: 239px;
+                        height: 207px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #fiat-txt{
+                height: 100px;
+    
+                & h3{
+                    font-size: 24px;
+                }
+    
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        width: 78vw;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:595px) {
+    
+    .cabecalho{
+        width: 78vw;
+        height: 100px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 10vw 10vw 30vw 10vw;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    
+        & .menus{
+    
+            & img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    
+        & .img-logo{
+
+            & img{
+                width: 63px;
+                height: 58px;
+            }
+        }
+    
+        & .pagina{
+            justify-self: center;
+            & h2{
+                font-size: 30px;
+            }
+        
+        }
+        
+        & .usuario{
+            & img{
+                width: 90px;
+                height: 45px;
+            }
+           
+        }
+    }
+    main{
+        width: 78vw;
+        height: 1006px;
+        grid-template-rows: 1fr auto auto 1fr 1fr auto;
+    
+        & .texto{
+            width: 60vw;
+            
+            & p{
+                font-size: 24px;
+            }
+        }
+    
+        & .titulo{
+    
+            & h1{
+                font-size: 51px;
+            }
+        }
+    
+        & hr{
+            width: 50vw;
+        }
+    
+        & #honda{
+    
+            & #honda-img{
+                width: 130px;
+                height: 100px;
+                & .fundo-img{
+    
+                    & img{
+                        width: 115px;
+                        height: 74px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #honda-txt{
+                height: 10px;
+    
+                & h3{
+                    font-size: 12px;
+                }
+    
+                & p{
+                    font-size: 8px;
+                }
+            }
+        }
+    
+        & #fiat{
+    
+            & #fiat-img{
+                width: 130px;
+                height: 100px;
+                & .fundo-img{
+                    
+    
+                    & img{
+                        width: 110px;
+                        height: 84px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #fiat-txt{
+                height: 20px;
+    
+                & h3{
+                    font-size: 12px;
+                }
+    
+                & p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        width: 77vw;
+        height: 10vh;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:512px) {
+    
+    .cabecalho{
+        width: 78vw;
+        height: 100px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 10vw 10vw 30vw 10vw;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    
+        & .menus{
+    
+            & img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    
+        & .img-logo{
+
+            & img{
+                width: 63px;
+                height: 58px;
+            }
+        }
+    
+        & .pagina{
+            justify-self: center;
+            & h2{
+                font-size: 30px;
+            }
+        
+        }
+        
+        & .usuario{
+            & img{
+                width: 60px;
+                height: 35px;
+            }
+           
+        }
+    }
+    main{
+        width: 78vw;
+        height: 1006px;
+        grid-template-rows: 1fr auto auto 1fr 1fr auto;
+    
+        & .texto{
+            width: 60vw;
+            
+            & p{
+                font-size: 24px;
+            }
+        }
+    
+        & .titulo{
+    
+            & h1{
+                font-size: 51px;
+            }
+        }
+    
+        & hr{
+            width: 50vw;
+        }
+    
+        & #honda{
+    
+            & #honda-img{
+                width: 130px;
+                height: 100px;
+                & .fundo-img{
+    
+                    & img{
+                        width: 115px;
+                        height: 74px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #honda-txt{
+                height: 10px;
+    
+                & h3{
+                    font-size: 12px;
+                }
+    
+                & p{
+                    font-size: 8px;
+                }
+            }
+        }
+    
+        & #fiat{
+    
+            & #fiat-img{
+                width: 130px;
+                height: 100px;
+                & .fundo-img{
+                    
+    
+                    & img{
+                        width: 110px;
+                        height: 84px;
+                    }
+                }
+                
+    
+                
+            }
+    
+            & #fiat-txt{
+                height: 20px;
+    
+                & h3{
+                    font-size: 12px;
+                }
+    
+                & p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        width: 77vw;
+        height: 10vh;
+    }
+}
