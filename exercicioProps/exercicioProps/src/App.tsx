@@ -27,11 +27,9 @@ function App() {
     <div>
       <h1>Componentes App</h1>
       <Cabecalho tituloProps = {titulo} />
-      <Conteudo>{
-        alunos.map((aluno,id)=> ( <Conteudo key={id} nome={aluno.nome} rm={alunos.rm}) )
+      {
+        alunos.map((aluno,id)=> ( <Conteudo id={id} nome={aluno.nome} rm={aluno.rm} />))
       }
-
-      <Conteudo/>
       <Rodape/>
     </div>
   )
