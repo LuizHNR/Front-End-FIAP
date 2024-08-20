@@ -27,7 +27,7 @@ function App() {
       <h1>Componentes App</h1>
       <Cabecalho tituloProps = {titulo} />
       {
-        alunos.map((aluno,id)=> ( <Conteudo id={id} nome={aluno.nome} rm={aluno.rm} avatar={aluno.avatar} />))
+        alunos.map((aluno)=> ( <Conteudo id={aluno.id} nome={aluno.nome} rm={aluno.rm} avatar={aluno.avatar} />))
       }
       <Rodape textoProps = {texto} />
     </div>
