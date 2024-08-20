@@ -1,8 +1,10 @@
-function Cabecalho(){
+import {CabecalhoProps} from "../../types"
+
+function Cabecalho({tituloProps}: CabecalhoProps){
 
     return(
         <header>
-            <h1></h1>
+            <h1>{tituloProps}</h1>
         </header>
     )
 }
