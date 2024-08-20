@@ -3,12 +3,10 @@ export type CabecalhoProps ={
 }
 
 export type dadosAluno = {
+    id:number
     nome:string;
     rm:string;
-}
-
-export type chave = {
-    id:number
+    avatar:string;
 }
 
 export type RodapeProps = {

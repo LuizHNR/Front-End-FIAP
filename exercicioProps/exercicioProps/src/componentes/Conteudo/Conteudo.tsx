@@ -1,7 +1,6 @@
 import { dadosAluno } from "../../types";
-import { chave } from "../../types";
 
-function Conteudo({id, nome, rm}: dadosAluno & chave){
+function Conteudo({id, nome, rm}: dadosAluno){
 
     return(
         <div key={id}>O aluno {nome} com id {id} tem o RM {rm}</div>
