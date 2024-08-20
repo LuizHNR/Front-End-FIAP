@@ -6,8 +6,7 @@ import types from "./types"
 function App() {
 
   const titulo: string = "Alunos";
-  
-
+  const texto: string = "";
 
   const alunos: dadosAluno[] = [
     {id:"111", nome:"Luiz", rm:"556864", avatar:"./image" },
@@ -30,7 +29,7 @@ function App() {
       {
         alunos.map((aluno,id)=> ( <Conteudo id={id} nome={aluno.nome} rm={aluno.rm} />))
       }
-      <Rodape/>
+      <Rodape textoProps = {texto} />
     </div>
   )
 }

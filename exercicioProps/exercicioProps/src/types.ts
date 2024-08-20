@@ -10,3 +10,7 @@ export type dadosAluno = {
 export type chave = {
     id:number
 }
+
+export type RodapeProps = {
+    textoProps: string;
+}
