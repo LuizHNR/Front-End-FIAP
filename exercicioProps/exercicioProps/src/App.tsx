@@ -1,6 +1,7 @@
 import Cabecalho from "./componentes/Cabecalho/Cabecalho";
 import Conteudo from "./componentes/Conteudo/Conteudo";
 import Rodape from "./componentes/Rodape/Rodape";
+import types from "./types"
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   
 
 
-  const cards: aluno[] = [
+  const alunos: dadosAluno[] = [
     {id:"111", nome:"Luiz", rm:"556864", avatar:"./image" },
     {id:"222", nome:"LuizE", rm:"556861", avatar:"./image" },
     {id:"333", nome:"Gustavo", rm:"556865", avatar:"./image" },
@@ -23,10 +24,16 @@ function App() {
   ];
 
   return (
-    <h1>Componentes App</h1>
-    <Cabecalho tituloProps = {titulo} />
-    <Conteudo/>
-    <Rodape/>
+    <div>
+      <h1>Componentes App</h1>
+      <Cabecalho tituloProps = {titulo} />
+      <Conteudo>{
+        alunos.map((aluno,id)=> ( <Conteudo key={id} nome={aluno.nome} rm={alunos.rm}) )
+      }
+
+      <Conteudo/>
+      <Rodape/>
+    </div>
   )
 }
 
