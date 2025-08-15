@@ -1,0 +1,145 @@
+$app-bg-color-light: white;
+$app-text-color-light: black;
+
+$app-bg-color-dark: black;
+$app-text-color-dark: white;
+
+body{
+    background-color:rgb(184, 184, 184);
+    color: black;
+}
+
+.app{
+
+    & .light{
+        background-color: $app-bg-color-light;
+        color: $app-text-color-light;
+    }
+
+    & .dark{
+        background-color: $app-bg-color-dark;
+        color: $app-text-color-dark;
+    }
+}
+
+.app-header{
+    padding: 20px;
+    text-align: center;
+    background-color: lighten($app-bg-color-dark, 10%);
+}
+
+// header{
+//     background-color: #4CAF50;
+//     padding: 20px;
+//     text-align: center;
+//     color: white;
+//     font-size: 1.5em;
+// }
+
+// footer{
+//     background-color: #333;
+//   padding: 10px;
+//   text-align: center;
+//   color: white;
+//   position: fixed;
+//   width: 100%;
+//   bottom: 0;
+// }
+
+
+
+// .main{
+//   padding: 20px;
+//   margin-top: 60px; // Espaço para o Header
+//   margin-bottom: 40px; // Espaço para o Footer
+// }
+
+// // Estilizando o contêiner do menu
+// nav{
+//   background-color: #333;
+//   padding: 10px;
+
+// // Estilizando a lista de itens do menu
+// & ul{
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   justify-content: space-around;
+
+// // Estilizando o item de lista
+// & li{
+//   display: inline;
+//   & a{
+//         color:#fff;
+//         text-decoration: none;
+//         padding: 10px 20px;
+//         display: block;
+//     }
+// }
+// }
+// }
+
+// table{
+//     border-collapse:collapse;
+//     width: 70%;
+//     margin: 0 auto;
+//     & thead{
+//         background-color: #f0f0f0;
+//         color: #333;
+//         font-weight: bold;
+//         font-size:24px;
+//         padding: 10px;
+//         text-align: left;
+//         & th{
+//                 padding: 10px;
+//                 border: 2px solid #333;
+//             }
+//     }
+
+//     & tbody{
+//         font-size: 18px;
+//         text-align:center;
+//             & td{
+//                 padding: 10px;
+//                 border: 2px solid #333;
+//         }
+//     }
+
+//     & tfoot{
+//         font-size: 18px;
+//         text-align:center;
+//         & td{
+//             padding: 10px;
+//             border: 2px solid #333;
+//         }
+//     }
+
+//     & tr:nth-child(odd){
+//         background-color:#e2e2e2;
+//     }
+
+//     & tr:nth-child(even){
+//         background-color:#e2c2e2;
+//     }
+// }
+
+// //Mixin para o modal de produtos do EditarProdutos
+// @mixin produto-modal($bg-color:#fff , $width:500px, $padding:20px , $border-radius:10px,$box-shadow-color:rgba(0,0,0,0.3)){
+//     display: block;
+//     position: fixed;
+//     z-index: 1000;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);background-color: $bg-color;
+//     width: $width;
+//     padding: $padding;
+//     border-radius: $border-radius;
+//     box-shadow: 0px 5px 15px $box-shadow-color;
+// }
+
+
+// .produto-modal{
+//     @include produto-modal;
+// }
+

@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(184, 184, 184);
+  color: black;
+}
+
+.app .light {
+  background-color: white;
+  color: black;
+}
+.app .dark {
+  background-color: black;
+  color: white;
+}
+
+.app-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+}/*# sourceMappingURL=style.css.map */

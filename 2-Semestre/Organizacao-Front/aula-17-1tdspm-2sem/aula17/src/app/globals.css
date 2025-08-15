@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .cabecalho{
+        @apply flex justify-between items-center bg-customBg bg-gradient-to-r from-customBg to-blue-600;
+
+        & li{
+            @apply inline mr-20;
+
+            & a{
+                @apply text-white text-2xl hover:underline;
+            }
+        }
+    }
+
+    .rodape{
+        @apply bg-customBg bg-gradient-to-r from-customBg to-blue-600;
+    }
+
+    .content-wrap{
+        @apply bg-customBg bg-gradient-to-r from-customBg to-blue-600;
+    }
+
+    .tabelaProd{
+        @apply border-2 border-gray-700 m-auto w-10/12 bg-black shadow-lg shadow-gray-600 font-sans font-bold;
+
+        & th,td{
+            @apply text-center text-white border-2 border-white py-5;
+        }
+
+        & tbody tr{
+            @apply hover:bg-slate-500;
+        }
+
+    }
+
+}

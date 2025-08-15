@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .cabecalho{
+        @apply bg-slate-600 h-32;
+    }
+}
