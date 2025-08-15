@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/paginas.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <script src="../js/cadastro.js"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="menus">
+        <img src="../img/menu-hamburguer.png" alt="menu-hamburguer" />
+      </div>
+      <a class="logo" href="../index.html">
+        <div class="img-logo">
+          <img src="../img/logo.png" alt="auto-logo" />
+        </div>
+        <h4>Auto Sense</h4>
+      </a>
+      <div class="pagina">
+        <h2>Cadastro</h2>
+      </div>
+      <div class="usuario">
+        <img src="../img/user-icon.png" alt="botao-user" />
+      </div>
+    </header>
+    <main>
+      <form class="inputs">
+        <div class="nome-user">
+          <h3>Nome de usuário</h3>
+          <div id="campoNomeUser">
+            <input
+              type="text"
+              name="TxtNUser"
+              id="txtfield1"
+              class="textfield"
+              placeholder="Digite Aqui..."
+            />
+            <label for="NUser" class="campo">*Campo Obrigatorio</label>
+          </div>
+        </div>
+        <div class="nome">
+          <h3>Nome Completo</h3>
+          <div id="campoNome">
+            <input
+              type="text"
+              name="TxtNMCompleto"
+              id="txtfield2"
+              class="textfield"
+              placeholder="Digite Aqui..."
+            />
+            <label for="NMCompleto" class="campo">*Campo Obrigatorio</label>
+          </div>
+        </div>
+        <div class="senha">
+          <h3>Senha</h3>
+          <div id="campoSenha">
+            <input
+              type="text"
+              name="TxtSenha"
+              id="txtfield3"
+              class="textfield"
+              placeholder="Digite Aqui..."
+            />
+            <label for="Senha" class="campo">*Campo Obrigatorio</label>
+          </div>
+        </div>
+        <div class="email">
+          <h3>E-mail</h3>
+          <div id="campoEmail">
+            <input
+              type="text"
+              name="TxtEmail"
+              id="txtfield4"
+              class="textfield"
+              placeholder="Digite Aqui..."
+            />
+            <label for="Email" class="campo">*Campo Obrigatorio</label>
+          </div>
+        </div>
+        <button type="submit" id="btnEnviar">Enviar Dados</button>
+    </form>
+      </form>
+    </main>
+
+    <footer class="rodape">
+      <div>
+        <p>Copyright &copy; 2024 Auto Sense</p>
+      </div>
+    </footer>
+  </body>
+</html>

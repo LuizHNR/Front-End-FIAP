@@ -1,0 +1,94 @@
+
+/*Este é um comentário em CSS*/
+/*
+    Este é um comentário 
+    em BLOCO em CSS
+*/
+
+/* Quais tags podem ser seletores CSS3: */
+/* 
+    - Tag
+    - Class
+    - ID
+    - Atributo
+    - Pseudo-classe
+    - Pseudo-elemento
+*/
+
+.cabecalho {
+    background-color: #0000ff;
+}
+
+/* Tag */
+h1 {
+    color: #318021;
+}
+
+/* Class */
+.link {
+    color: #318021;
+}
+
+.titulo{
+    font-family: serif;
+}
+
+.menu{
+    font-weight: bold;
+}
+
+
+ul .link {
+    color: #e8240e;
+    /* border: 2px solid #e8240e; */
+    display: inline;
+    margin: 0 3%;
+
+    /* Nesting links */
+    a{
+        text-decoration: none;
+        color: #e8240e;
+    }
+
+}
+
+.container {
+
+    width: 80%;
+    height: 100%;
+    border: 2px solid #000;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* ID */
+#menu ul{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+#conteudo{
+    line-height: 1.5em;
+}
+
+#borda{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.paragrafo{
+    color: #27ac0d;
+}
+
+#button{
+    background-color: #0000ff;
+    color:#ffffff
+}
+
+.rodape{
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #ff0000;
+}
